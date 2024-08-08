@@ -23,10 +23,13 @@ body {
 }
 
 .black-button {
-    background-color: 'black';
-    color: 'white';
-    margin-top: 30px;
-    min-widht: 200px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #changing-word {
@@ -186,6 +189,7 @@ h2 {
     margin-bottom: 50px;
     background-color: #f9f9f9;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
 }
 
 .single-portfolio img {
