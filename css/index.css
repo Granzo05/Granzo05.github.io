@@ -23,6 +23,8 @@ body {
 }
 
 .black-button {
+    background-color: 'black';
+    color: 'white'
     margin-bottom: 30px;
     widht: 150px;
     height: 40px;
