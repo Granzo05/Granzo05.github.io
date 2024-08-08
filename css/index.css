@@ -22,6 +22,11 @@ body {
     min-height: 80px;
 }
 
+.btn-view-project {
+    widht: 150px;
+    height: 40px;
+}
+
 #changing-word {
     display: inline-block;
     overflow: hidden;
