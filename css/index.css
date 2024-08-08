@@ -26,7 +26,7 @@ body {
     background-color: 'black';
     color: 'white';
     margin-top: 30px;
-    widht: 200px;
+    min-widht: 200px;
 }
 
 #changing-word {
