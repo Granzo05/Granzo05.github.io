@@ -22,7 +22,8 @@ body {
     min-height: 80px;
 }
 
-.btn-view-project {
+.black-button {
+    margin-bottom: 30px;
     widht: 150px;
     height: 40px;
 }
