@@ -1,0 +1,238 @@
+{
+  "basics": {
+    "name": "Facundo Granzotto",
+    "label": "Full Stack Developer con 2 años de experiencia",
+    "image": "/me.webp",
+    "email": "facu.granzotto5@gmail.com",
+    "phone": "+54 2613869291",
+    "url": "",
+    "summary": "2 años de experiencia como Desarrollador Web. Graduado cómo Técnico Superior en Programación. Vivo en Mendoza, Argentina. He desarrollado diferentes proyectos y creado webs como freelancer. Busco especializarme en Backend pero tengo conocimientos necesarios para crear aplicaciones completas.",
+    "location": {
+      "address": "",
+      "postalCode": "5547",
+      "city": "Mendoza",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "facundo granzotto",
+        "url": "https://www.linkedin.com/in/facundo-granzotto/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Granzo05",
+        "url": "https://github.com/Granzo05"
+      }
+    ]
+  },
+  "work": [],
+  "education": [
+    {
+      "institution": "Universitad Tecnológica Nacional",
+      "url": "https://www4.frm.utn.edu.ar/",
+      "area": "Técnico Superior en Programación",
+      "studyType": "Bachelor",
+      "startDate": "2022-08-01",
+      "endDate": "2024-10-16",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo de servidores",
+        "Backend",
+        "Java",
+        "Java EE"
+      ]
+    },
+    {
+      "name": "Spring",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo de servidores",
+        "Backend"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Basic"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Ecomerce",
+      "isActive": true,
+      "description": "Creado con React native, Typescript, Java, Springboot",
+      "highlights": [
+        "Gestión de stock",
+        "Gestión de empledos",
+        "Gestión de productos",
+        "Gestión de promociones",
+        "Gestión de pagos"
+      ],
+      "url": "https://autosp.vercel.app/"
+    },
+    {
+      "name": "Calculador de distancias",
+      "isActive": true,
+      "description": "Aplicación de escritorio creada con Electron, Javascript y Node.js",
+      "highlights": [
+        "Compara puntos de partida con puntos de llegada",
+        "Genera un excel con los resultados",
+        "Almacena los datos en una base de datos oracle cloud"
+      ],
+      "url": "https://github.com/Granzo05/Calculador-de-rutas"
+    },
+    {
+      "name": "Lector de archivos en simultáneo",
+      "isActive": true,
+      "description": "Aplicación de escritorio creada con Electron, Typescript y Node.js",
+      "highlights": [
+        "Ütil para docentes que comparan exámenes",
+        "Almacena los datos en una base de datos",
+        "Permite comparar entre escuelas, grados y alumnos"
+      ],
+      "url": "https://github.com/Granzo05/Comparador-de-archivos"
+    }    
+  ]
+}
