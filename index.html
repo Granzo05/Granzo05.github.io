@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="div-header">
+            <ul id="main-menu">
+                <li class="nav-item"><a class="nav-link" href="#about">¿Quién soy?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutme">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="banner" id="home" style="margin-top: 30px;">
+        <div class="container" style="margin-bottom: 70px;">
+            <div>
+                <div>
+                    <div class="banner-content">
+                        <span class="before-heading">
+                            ¡Hola! Espero que estés muy bien y gracias por querer saber un poco más sobre mí, soy <br>
+                            <b id="changing-word"></b>
+                        </span>
+                        <p style="margin-bottom: 30px;">En esta página podes ver mi información más detallada, pero si
+                            no tenés mucho tiempo te dejo mi Curriculum con los datos resumidos, <b>muchas gracias por
+                                fijarte en mi.</b></p>
+                        <a href="documents/Facundo_Granzotto_CV.pdf" class="curriculum" target="_blank">Abrir
+                            curriculum</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div>
+                <div>
+                    <div class="about-content wow" data-wow-delay="0.3s">
+                        <h2>¿Quién soy?</h2>
+                        <p> <b>Programador fullstack con 2 años de experiencia</b>, orientado hacia el backend pero
+                            capaz de
+                            crear sistemas completos en ambos sectores. </p>
+
+                        <p id="contacto">Tengo la seguridad que <b>mis conocimientos ya pueden ser utilizados para
+                                desafios
+                                mayores y
+                                me
+                                encantaría demostrartelo</b>, a continuación están mis datos. <b>Hablemos</b>
+                        </p>
+
+
+
+                        <div class="container-datos-pers">
+                            <span class="datos">
+                                <img class="icon-img"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE6UlEQVR4nO2Y20+TZxzHuVmy7L9YsqtN3TBmm3qxLDPxZjhPgLIhbBajMDVTiCzLZKKlFSwU0lJKKT2o1EKhB1psC6UtPVIpcmhpK9giUHoCAZFyEr4L3LLNRdG65f0k783zJG9+nzzv78nv+yYlERAQEBAQELwjfFvE/uAIufXEyTJNBYnRpbgkcLjIUu842zg5d9seWZc4Y+ttg0/j0oexubuOWIBrCVkZnZNSmnaiqljpv3JF4kn5Wdj3YUKK35/H8u7NZa58ky/A4WIpsuk6XOI/AFnmQ60pjNv2KJp7p6Bxz0DRPw1xTwwCWwTsrjDoukncUAZQIHLjHLcHp6rMCxnlnUOpZe2qtJttlem0jtMZDP1nZ9js9163zkNFsj0HCgTVWzY+zaTgy7MMbIsAw4yTNB2OUdpw6JoMR8lKpJVpkUHvXM1kWkZyOA71BeEgt7DJc/OazH+hXDuRVqme2FeuC32y8ZR1TH5covF/ce2eJ+Uyz3mWxDAxU6ltxoOFDbG9udXYlUlBYgQq9Jt7JHY3Lgj78GujF2TlY1TqgmAZQ+CYwuCaw6gxhkC7H8BViRsX6x34sVKHo9elOFAgACGgIU7ATHxCu17WxGlkGQq4Xahpc0HlnMDAxAIeReLwxxYx/nQJI9FFPBx7jq7huc2GFtqiuHl/NLFNvD+nFCd+4+AqSwqe3Ai1pR/9vicIT83i3xBfWsZwcArtvQFwNYO43mBFHrMd6SXybRdIPkXdKpCaT8d5Kh8ldfJXFgjFZuAbnYRj0AedzYkWTQcEMg0a1HYI1A/AVjlBl/eBIukHWeYGWe4DVeV/qUAey4CzdCVyqGL8VMzDscv0NykQRHe3Bu1aIZpbaiBo4KBJLkKbyQlDzxAcrsdwj4wjEIwiMj2H+YVFzC+9wNTzVcTmVxCcWcbEzDIC0WcYGo3A4fJv1sKXG0HhynGxVIjjb1LA63HAbhRC03gJTbUnUM8kQXzvFlRqMQwPXH8psLa2vuV9G+tjoSk4hwJvWWB4CLZONtS8FIhpO8At2Y17tdlQqfjQ26z/AYFHLthNImjuZEFM2wluSTJEzMNolTOgt9vefQFfYBx2mwJaJR1N9STUV30PMe8XKFvroDfr3q5Ar2cUI8FpxOZXEZpbRuTZCmbjq5hbfIGl1bW/v4UGvOjQNaNFzgf/LgONzXVQaWUw9LjfnMDxfDqy/+CCRBXjTIUSuSzDS6fRjbU73VGIHDGI7CGIrU/QYh1Bq9WL+5ZBtLQbIZCqINGY/vEWWtsOgeQs6raP05k0NUjlKhRydCiX2HC3ow/63uFXFrhaI8XJ37nYRypNbB7IrXOgSOICs90PiSMEg3cWD8efwxOKwxOOwx1agMU3jRb7KBjKgc2xJp0sI/IAiERWQURK/P8z8cErDdFUqsqQwzQw8oU9525IPSlVxrHPqy3TOzi28C6BJZrMN8e+rrdGsmqMoQKGPkijaYO8YkVAnS9yPTrHda4kROBAgaD6SJFid9JrsvHzKptt3flDlTE7/Za2/ChFpTlOUfvSS7Xx7RDYl8da2Z9X401KBKcZ+o+y2JbDZzg9hefvDNALm7yN5NaAsaIj6Ks2hqZqTaFndebwKsswuX5LPTpbJBkau8jrHsyp7lJklKlp35Uo0r8q4r2fkOIJCAgICAgIkrbyJyylmJjTsTtOAAAAAElFTkSuQmCC">
+                                <p><b>Localización:</b>
+                                    Mendoza, Argentina</p>
+                            </span>
+
+                            <span class="datos">
+                                <img class="icon-img"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADeUlEQVR4nO2YS2gTQRiAf/GBtrSC9bWbWkUP1SpFbDPTShXBq+hJBfGoJw8e9GR9o3ixJ0Hc3bSdTVofEWoVWu1BUmNm0mKamWhVUCt40IOKL1BRwZWNLWxeTXswmcV8MLewzJf//2fm/wFKlCjxnxAMzlzqI5sVg7QphvlM1c0vqmEeAplZHgrNVXRzh6KbHapB3qmGaaUsnfxeqnV4QUZwNLHdS/nLFV3XUzedIWHeA9lATBzHTFj2Wtcfmlzgr8Q2kAlMxecJAUS5tYxczicxatcIyAKi4smEgL3W3BrIGwXFIPtAFhDlB5wC3vsjlqc9MLmAbr5e4veXgww0xGJlmPL3Tonanv78tWCYx0AWEOOnU6IQHrGq80TBvhsWBAKVIAPNVCxGjH9PqYWbU6gFLbABZAFTcckpgCJxq8a8MokAGYEToVkgC02MezAVX50S9QPhHOlDHiha90KQDUz5WaeAvVZd603/58MrNW0+yAgaGqrETLxxCjSGY1Z1Z9dE4Q4omlYGMoOjYnd6FOxUUnTyvsrnqwA3gCi/nS5R29M/Bm6hiXEPYvxDyt1A47+8ww8bwS3gCN+bHgXE+Avv8HAVuAVMRXeGBBWDdaOjc8AN1AtRjpkYTZfAVBCwrBngBprpw9WYik9Z0uk8uAUc5Vsw5T8yJcRxcAs4wvdnpNJfiRNT/UaDps1W9c71RbvJcZS3ZpPAVFzIVxOqaVYpOolPPMVVnRwtSlOEGD+XQ4LkOp3svkHVyYMsPcVbRSMHC/6qxZSfzJpOVERawvFFzt9WtwXnqQYZzNNbPPX4/DsLKoFY4kgOiecNLJFsdOy3k/0AnEJ7ao332qGCDs+ShU3Fz3QJ+9lR29P3SjHIh6luXnVMAFUfOVwwCS9NbMVMfMwWjfo7g9ayju7pCRj22Mb8BIWkMZKoxYw/yiZh9xOrrt6YrsAzKMazAzERyHpCjfcUNZP22CmDszYoFl4W35MrpVCEJ6cd+UY2ih7YBMUEDSWqEeX9uaLReD+WHJ552v3Z5k1vpZm9NjG+CzHxOqdIOGat7r1jedq7nEdpB8jExsjTCkTFmfSRTcqxGxmx1vbdtZb7r9kCO0DaNpXyi4iKb7lEEBVjdcGg3M1SSzi+CFN+ClPxLkMimtgObqEhFitLjvapeJw8taK8tdh7KlGiBPxb/gAwKJWlsMaWKAAAAABJRU5ErkJggg==">
+                                <p><b>Celular:</b>
+                                    2613869291</p>
+                            </span>
+                            <span class="datos">
+                                <img class="icon-img"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjElEQVR4nO1Wz0sCQRTe/24LEQRvQV0K6pSHOtS941qaHSIoKhIED0F0iDoVBR1ad/uhbBqloqWS2bpt/gj2i5kUgrJaXW2R+eDBMDPM++a9770ZjmNgYOgDGIYBOxr3mSAviLYygxEUWARFe2nwPF2GJ6j8e3F4ggrl8oXg3M4t7ktViHcqxtdjPSc2uhbFoVJEQa3Bv5/6voodCxG6WHyp0c3DK5ddJza0fIFduYCSXsfqUQZOn/R7m3Etytg8yeJZryN0+gB3QLacmMsvUULEx/ZZDu4l2XwfbHW7TszRzJL2kaWRFlky1ajHGvrIq1V6+KA3YprYgFekOs+WKlTnExsx61+SZoUlH1+pM/6P5GbCcSRyOmJZDdOh6+4/dcThTV5HNKNh6geHk1sKpJSKVONCA718i0ma5/eSNO3H8SfMhhO0mIiRMZkja2RPO5Kw7LPg9EkIHKRxldFQrrxRI2My10lRsd8M32bkWAT5DiPHIsizCArWaIhnGhRYBGGqzdjROAYGhj7AO5wjySyJHm3hAAAAAElFTkSuQmCC">
+                                <p><b>Email:</b>
+                                    facu.granzotto5@gmail.com</p>
+                            </span>
+
+                            <div class="web-links">
+                                <div class="btn btn-linkedin btn-lg" onclick="openLinkedin()">
+                                    <img class="icon-linkedin"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2aPWsUURSGrxoFxSSmS2JhJVpoFRG0t4qYKrG1SOEPSCJYiKDYKDb6CywFtRMEV0QRgim0iqBgYVBQJCRRkoiaR87yBoZhZ3J3Zid7B+9TJee83HvevR8zmxPnIpFIIYCzQAP4Sff5oVpG2zVxnXC51s5KGOvAFDDkugwwBEyrJrxWBngm8ZQLDGBGtTV8xLYfjUEXGMCgalvxETdxgYJvff+FEeAU8Bj4CnwBHgHHqii4MiO6zf60uA7XgBFXIyNvlbJnzAFgv93pij2tqvAqjCwrtS8R6/O+RQIy8lypG0C/TFxVbLaqwqswMgKstjgj9rQ94Wp2ax0G7gGfgM+1vLVCgQ5srVdk89JHA+wGzgMPgAVtyyXdiLeAo9thJBcfDfBui/xv4DbQU7mRvLjnhzAPTAKHgD1AL3AauAv8kuYhsDNEI/b03wCuZBUo3Ungm4aZCdHIODCR+H1XzvxnNIydnb6gjChnrzV3gO+S2UvnTdtaLbRPpLkYlBF7rQHeJM7J38TPc8DelP6CcvdDM3JZqffAcbuVdB4+tjoPwBHFP4RmxD5141wqPqb461S8X/Gl0IwsKjWQig8ovpiK71B8IzQjmZOXmS+XaMTFFWlSdme4sgMk40UmLzNfLtGIiyvSpOzOcGUHSMaLTF5mvly2GiALX02RcTttxL5zZ/HCV1Nk3I4aCQXaMLIibddbbmmAg6pt2Uds3VNj2gUGcKmd1tuoxOvq2Q1vS5X5NQ3LxOZfWfza1Il2QX3b06mVaSSao/X7h4FIJOI2+Qcr3dTGXC5RnAAAAABJRU5ErkJggg==">
+                                    <p>LinkedIn</p>
+                                </div>
+
+                                <div class="btn btn-github btn-lg" onclick="openGithub()">
+                                    <img class="icon-github"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADv0lEQVR4nO2ZW4iNURTHP4YMcs+4X3In8eASxgMpcosXhPJCcifhlTzILZdGKY/y4M0tdx5JeDAyDDMkxqUwjfu4HD8t1qnjtM/37X3Ot8+ZNP/adTrft9Ze/73XXpf9BUEj/lMAHYC5wB7gLFAJ1ALfdMjvB/pM3pkDtA8aAoAWwGLgIvATd4jMeWCR6AoKQKAlsBF4QXyoATYAxfkiMR2oxh+qgGm+3egg+cNR2fm4SXQBbpN/3ARK4iLRV7e7UHgkNuRKorOG0UKjGuiaLYniArlTmJu5h2jgMA0PZdmE2DBsUbcbDWwFnuZgnGT7zcBIrQ72Rbw/1SXZReWJngY3FEJfgSvAemAiMBBorWOQ/rcKOAV8BNYCRWm6Rloc/mgX04wdBWP2BZpbrVbIu0A3i/nX2yQ9m7Ij3kT1rw1dLeZ/HrorWgDaYIhHIqWWNiwMUyJVrA3meySy2tKGc5kUdHAoxbd7JHLE0oYfQFuTAmmKbPBeDqRHIkOB75a2zDYp2GspvM8XiSSA45a27DYJSwtqg7GBZwDzLG05bRKWRGPjl83yQGSwJZFKk/BbC8G3vkkIgF6WRN4E6dCbjijIO00CzwCGp3lBrY5fafbUm4STkWKS1jv9gI5Ad/2dHN6JpEJcWVODjCZaC/ZILqxJoE4f3gDuAI/V3V7p7+RYEHgGUBbiFZ9TjkGtSfihPryqpfQ6idNasY7QlvfPquSBSFOdqzcwTCIlMFMr5516FyZ4YBK+oA93aBm+HzgBXAPKdTfe6TlZ4nk36vVMPAEqgFvAGeCQ9kJ7M5YpUnZgj0+yUx5ILDcc6DBsMymZghu+AEvjcDVtH3Y5khBMNilrZRmC03Fdz1JRFgRa62KI27qiPmNflHJO0iF9yjJJQCGKXwPHgJWyUkB/oF2K7k7Sx8h1KLBJygttd7PF2bAVkpXNFPJKtQcXg23cToztkqK7RP+TZ3FgRlTYk0hhQrk+HwN8iCBRGjJHaQxkqsSWKL+V0JsJM1NKiAvqGsmPOM+Ay8Cs0An+yq/Ikchqq9sN4K6zXzpAdzbTHFG4Y12BAxOAhEFJIq78oUHBFQlgnOtEkkVNqNOLtZ6Rfhquf0AWRA5mM1FzrbtcUOSo3wWXXC4A0ydr6+LLWei3RUXOX4CBPsD9AhK5Jx1jTiRSJmwjlWYBiFyO/Vu8+nRZhmgWN5EEcMDrRQcwSvsDX0TKgfF+rDf30WvTvqPUZKHnZYq86FqTj+umTBlaWtCTyfLFUX62ys7IJSc1ohGBP/wGjidhuRxqAwcAAAAASUVORK5CYII=">
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <div>
+                        <h2>Tecnologías</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Frontend</h3>
+                        <span class="tecnologia"><img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtklEQVR4nO3ZW2xMQRgH8L+oJogHxAPxghc8iMsDbyWoiHQ7s7UlrkFtUQ0pIUKIS0IqEtdQQVwiLhFEJG4JD3WL4EG0IajbnnO2u92DaovSjmxX9HycadeZYRPZL5lkk8k5Z357vpn5dhZIRzrS8f+GwVFncohUNoPho3cAw4uUAzieqwDupBpgctz2DDA5zqsOQBT/eWuYR+5xTgWwPxWAujnkHmWeAQbHxlQAameRSbxBBVCcCsD7GQSw2DPAYshPBcCe1nq9xRHwDsjFaNnArBndhW3b7bakYtNAAohOdTyLIcszwGQYJP12J2cIOxbTA1jViwCqA44U8mOgZ0CIoWdb6WFbIXVAc7MQSzIIwMprfcabAHp4Bgigg8HQKAPEqirVAfU2GXxzEZnAjfExQCVMDkMKqLhLBmsV9lOexN8WkvwPKQ2+BcDwUAq4f5UCSoYrAxoLCeCBDsBlGaCm/AwBhNeOUwZ8mk9S6JIywGA4IgVcOUQA1aX5yoD6uQ4Ax2EdgK0yQPT8dvVJfGM7AXycTQClygCTY7kUcGKDOuDSegL4MNPxDD+W6QDMkgEih5arA86WEMC76QQwUxlg+DFBCtgdVAccn0sANY4ywmDIVgaE8jDMSxEnncT3jlHAAT/pj+S3XhvKxVBlwGsf+mgFPL5IAbvGkv6wo4yIcPRWBogsZBgMTW6Dq16dRdIlevNc+4CqWxRQOoL0O1agZhFEJ+gIk6PGDRBeMoQAah6Vtw8IV1LA+gE/+5oWkWuj0BUGR6UbwJrXlwBioZcivC5bWIHM3wFLM4XYN0mIhnfSUvrrAvIGKnQCbrjm+NQuritP7G2ViF7YJcJrxgixJ1uIOwcTVadbLO30E/A5SFag6zoBp2ST1I5Y3pfRL3UkvRoKSCF3UhvAZNgp3Y3PbmtJnT8GxFOpfK/8OIVhh07AmjaXy7yOIrxilIic3ixir57KAfE0undUiLKcxJwo/uU4xVEHmQyrtQEMhvlJr/0OjP3qiRD1sTYHLWTHKRwFOgG5njayyRm//d5N9jglxOHTBghzjNK2E8t+Si6CiDhOIywfRuoD+NH/bwAaCxP1f3SKyx6Tg37aANZ4dNUBaCqC+FSQKJmdNY/ptkmOR1fojJa3wBA0OE4bHLXJAr4EE4e1UUeV6doYGkyGawbHStOHwfib8SaAziE/xpkMW0yO+17fjpH4B6gsfv4Z9aEbUhVJv51/+S2rvB2TYeKP3ftZS4t/ZpgY7/N843SkIx3/Z3wHrTGmPWk4PzUAAAAASUVORK5CYII=">HTML</span>
+
+                        <span class="tecnologia"><img class="icon-tecnologia"
+                                src="data:image/png;base64,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">CSS</span>
+
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKElEQVR4nO2WT0hVQRTGz/GZ7yEiRJJ/SsMiRaigUFwUhQgGouLChZS5Cmmj5c4kol1tRNoYLcJ0JRKUFYmUJi5EQSP/dEFxkUW4iQyUIMS+mHe5jtN7ihLeO8L54OPBmXmX+c2c+90hEolEIisFh2CTSQAcOQFIC+1GQbcM5CV2gt91SIw6we885EPm2GHarYJeMATACX7XIS3k/M+O8YZ7282xmT5CbTkjI42RGGJkHWbUVTJmX+4DgMFOQiSsx2iTkyMcHbcWYH2WkHtU18NJjILj7q9XKz7D+PPJUoCPz3U9IYEx/cKtLw4STmQzbl5jrExYfALDXbqu2uj3lJ7/64NlKRQP4MuQWa8uZXx+t9PnWQCgfPmC+eJGwozrNYz5/n0C8G2YcLYgNoFCIRdkddJyAGW1yNYGRkpyLMjpPMaPMcsBPH8fJdxvJqQfMiEar3KwACrvtwP4N+d/jlM0/7352Rk+AqgUqSphvH6kawsDJsCrDj3W/YBQeCo279tb9H+SDvgE0NNG0c+/lya36hkddwnnz5ktoe4+ar66/3i1kmLG1yG3vjxOuFSkx9TX2heAuTcaYCufPKavBg9bzZNhZhxJN68SyrcbfGyh908JqSnxF69a4e0Ts/fv3Nge+GJh/CjdMwDlpRFCUx0jJ9PNc3VNriljTD6LP3+sh3ClgpGf6+7+wVR34Y/vEdZmtkq1PQTwwyQAjpwAfG0hkUgkIj/0FxH0JVVHu8XgAAAAAElFTkSuQmCC">
+                            Javascript
+                        </span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Frameworks Frontend</h3>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAACSUlEQVR4nJVTS2sTURSehY+t6NaquFfciW66si7qxkeoWEOtj9i0qZmkM5OkkkwxWGNIS2NMUCaPeSRqChqs4E5CqdE+pk1s4zyZJJCARfoLWgQ5A6MlmQoeOMOdc+537r3f+Q6CtNkAWTzRHyoebY/fCH46Do78y9CkEPGwmoIzchNn1HeD0wsnwQlGKWAZpQU5NCWETcEDZPEQzqh1y9SXw91kcZ/jZdXvzdUl8AdU1W+z8futk0tHcFatw96OAjcjpfPjrxuLxv+9+HK3N1tTfNmaAmsjPv6qsTw4+fVsR4G+4HwXTsvy7elSr4MSXIHZloKlpSI4rCEGOYJV5H6yjaO74aUzOCOnHxU2t72cVvLnm5vutMihlESAj2VEDmKQCxZ+bGOsmrozs3paB9sTZYsvV5edKSHgzoj54UR5zpvVVkajHw8OJTYu2eLrvbD2cjUecq60nHdRQgAww8/XriEeVl2/H1u5oN9khr/8+P3PX/Z4pQ/ATz5s7YTmtnagyEhs9TrkYI9+cLTcQ7DqNwQ+9ijfY1YAwHsVGIpVLhKMWkFGEpWrcB00KZDGEzxcTX8CAG3Pyh1PcFLiBHTH8WLjis6DbYo/hTNqEgjaRSLrTouY7rTMGiQC0WO0/JfE3W0kWFUy2uj/nzYiCIJYw5/PtQsJrtkupIdvGoumQjKkDHK1kLMHRqnvEyBjX06TnFQ1ADFdysweUgZDU1IYBgZjpBbBKH+GCafVtxgtNz2cpriS4lNTsGG3IvNdZuNsDS0cMxvn3/1urWe8MlurAAAAAElFTkSuQmCC">
+                            React
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Backend</h3>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,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">
+                            Java
+                        </span>
+
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACp0lEQVR4nO2Xz2sTQRTHt2D1Iijaf8FLLUmazc4ktiH9kZ3ZJN15AclBLwpCbnqsJxNoERuVHCzqQaGQVElprQh68yD0UBE8F+zFm4p67sGQkUm7yWa7m2SLUgLzgWGZfW/fe1/m5yqKRCKRSCQSieRYQRR2kMFyiqIMKYMIpsCbjbD3ykALoMCVQQRLAccMliNwQDABZzFhJUzZL/EUfaULiReJkWSFbhm1TENbim6pD9URvznUZO5MtxHoqyZVzQ9jks0jyn7YgyHKfmMCtw3DONVReDFxIrlCy+l188/c6ywXbeq5zgMFtR5a1Kq5Yu6kaw7KbmECP+05sKPvuyZETUAUvnQEdbR9O2PCf6ZC5401c88qvNU2s1wrxXjgTpgHC+re+CKat4rpJwe2CfBVEyKs7jB81HTzmnh2vCesLoIba2bjUPEHjbxM80AhvC+iqDZaAhw5MIFtkQMT2HYV4FITpnDdtaZOx+wV23E+JPrO4PGn067FW23iUaIpQIyGJcBvDtzFXyNwtcO/1xbmtEfLk5yspj0FZDaAR+5FufDzitErB3aOSDk+g8uTX8XTbkeEvTuSgEgp1izUS0SyYvxXAYjCLiZw+UjB0f1LzXkef9x9KsWfTLsKEFPAzxTSOv17F9jLHipGrEXKaW3OU4BRM1vx3BYlMuCG10bhsug/YQpTXQUgAm/c7OK9XUD4rrYcLITrQgR+MOFafGrdrOtVY7mdgzE/WzX28ifwVqPmxcM/E9QEzyFq78s7Vn+0OHp6fAFtBgrhxuwKbS/gV8D1auoDeUbOOWO0Dyb43s9hqar54SiBm86DTnyvzWbPK/+C0AK+gJZinzMbjOurqV29oo/1+qZ5dRBXAwLfrKtEX/59Xm8kEolEIpFIJBKJRBkU/gIP08f/AcFN4wAAAABJRU5ErkJggg==">
+                            Node.js
+                        </span>
+
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEhklEQVR4nO2Wy28bRRzHA7S0TWji5mGnbpPyBiGEQCBUIXGhUk9IqKWlFw78Bxw48mqAxEnqvEqb5mFIKRI5NC0XDlREVFVppTQUISSoVGI79m7Xm/gRJwQ7dm3/0Mx41ju7a69n0644+Cd9JD/W8uc7+s7s1tXVpja1qc3/cp75Zg0oT59FrGKemmJ58uukwhNfUVYwj/tKPDaJSCg8OkGJw75xls6xmELHGQJ3ACJtLK6WLonrpYm4sbRWvHMsrpMmRGHvaNRKgGqkk/dMunNML62GOwART3JUJLGpinSciemk95xGLGO4A9jR6w6D1VZLI9ynCNwB7Oj1XhNpxO4vlzDcAezo9R6VuFrafYpIU9pPWgxwv3vtNpEmyBjuAHb02q2qCCtOpF0jJbgDbLYi90LaNSKDcziC4Q5gR6/by4hTaUrbkMUA97vXLhNpggStgxJ/ADt67RopL03FKdwB7Oi100S6ZeCOAncAeyoi6aS14s1eAncAO3rdaiLd7BUxu06IVgJUrsh8JAu803t9TRF2j0Tgg5+ScMmfhtBqDlbSeYy8noNfpQxM/b4Or/hkLO/otxDArNfzEn8Az7U1vMLPj8twK3bX9PqjM1Fw9AsY7gBmFdlMgJ+DG7rv7uYB4qk889mb08vQ1CdguAOY9frgdAyOXIzD2xcIRy/GmT//M5qFw+djCofOx+ClSRlenIgw1+ULAO//uAJtXlQVAXYPiXDsQhRmA2k4cE6Gxt4whjsA73ndPiwxYteFjG5Doj4fmYkx180G0licrnRTHxFGOIqvd3osBqj+vJbANXSHEbsmZBRpNe/MRJnr/opmwekVGXEqvdMTUuAOwHteOwe1ATYUaXSK0M343KgEBU3/58QMvD4l66Qf6SnBHYD3vHYOiroAVFpbkW//WNdt4gIA/HA7Bft9kkp8ERq6CdwBykkb9RrRNqAPYNRrxL5hEW5KGV0INLkCwOTNNWjpC2Hx+i8I3AFQr82kSxURoNUrsAHCGxV73T4QBt9v/+BTyGjQ7x0eJB+EHZ8HrQQwvqUb9RqtcssJNsAv4Q3DzajudUP3Irzmk+DSQsowxPHLCSxvKYCZtLbXzf1hXQAjaXWvG5SKBOHguQiEkuzdGb3f/lkAwx1AWxG9tMDUwyhAZWkiXl+sCOKF0+w+QvXa3hWAbV0WApSTLtfrXX0hXQC1NBV/eVyE975fhvqi9A4MWeVnT7KLkEjnYVuXHx4+7ucPUI20uiKOXk2AUJqpCF3pA2fJo8StaBZ3/NC0DK9OiPDWdzLcENlnpFl/Cstv/XTBSgBWWiuu7XWTZ5H586uhtK4iiDem2EeOSnN4OoLlLQWoRlpdj8YefQAqTTciopoAhQJA95UEbPlkocjf/AEqHX1Gp0hjT1AXQC2ONiKiuScA784swejcKlwOpMCfyELs3xwsredgTkjDxPwq7B8XFPGHPiZwB6hGWlsP7WpTabQR6Wak0GpsLaJebSpNefCj21YCVHf0aaVL4npprfiWitJEHPHAhxYC1KY2talNnR3zH8dEHBBOG09ZAAAAAElFTkSuQmCC">Typescript
+                        </span>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Frameworks Backend</h3>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGElEQVR4nO1Z208cVRhfbw/2RePlSX3wbzAa++SLIXvOQltjqKaN8UmTqqnGRGvQBJNausywbaX0QlrFC2krCL3QVtQ2G85ZlgILLNdti0BZoFQoC+WysNfPfLM7lF1YZoaZ2QfDLzlhObv7ze87l9/3O2ctlk1s4v8Lhzv/yaw8qKoq/zHBlbu1mJECgZEagdNekZOAwGhY5DSSeE26RUZqBU6/cnDr6wCWRxRjMlppKvGShpyXBE7sAiOjIqegsY0InB6wO60vrhW72EXeERiNiw15LxtO/ACzPi9wUi4yEtoA8dTGMAYpLXHmPifHx9kRGPHi+wIjXxpKXuBkl8DolG7iq9uEyOlOfIbIrXlyv8CJxxDi5Z5XnhA4PWUCcUhtpBRJp/TpXUaFntwtAqNXzSdPl9vRpp1Qd7NYel3Cyaf6Rj7L5EVOwTt+BQYDrcllRK9tOIHsLBua0i75igARiYXgcOMOQDk+7Nz+tGbyJS7r7myTP9v5BYSjiyCjuucbqR9lVRP5ouYdzwqcTGaT/IW+/RCOLcFKtI1dlN8/rikBSeezRPyQaxs0+c9BHOKQjqngSGIfMOJVTR6royFFSkX7rbsAJueHIDPikiKJjMTsf7/5lNrRt5tJ2uHKg/N9+2F42gtqgElKs+Cy5iiSL4TCR9GnGEH0SONbcKL5Paho2yOtbzZUAb6JBliMzIEWNAz9mIjJ6F7l0Xflbt0I0Yu+Ikm7Rx/0wsziPUkCjULXeH1yH9CjigmgJVZN3P02NPnPah5RJQTDD1L+vzPdkUiAk3rlGWCkRg35Xzs+k0baaETjEbg760vpCwTHZCXyKSYgMtqjRP5c1z5YWWyMRM+/12ApMp/StxCekZ89omIG1rfK5S3vw2Jk1hTywcgsOAdPr+rHhJJ7YErFDKyv//9M3QCzcPmmCPfm+lf1oyAkVIiEdCXwc/snppFvv1sHdT57xplJbGK6pGsJtY7WmEJ+MOCB0qb8jKIwMT8oq9Ckrk08PnfbcPL+mS7JMnvHr2b8zECgRZ6BLjVLqDZTAqgGRuLWJJfIX+j7bt3P4cwnE6jWVciMKljxeAzcw2dA5DapnihJcm3vt0kOtn2KCeClU+YZmNZNHtc5HlowXkXbHsWYKKGHGrcnODRaX1Vl5gRO/UZLKB5UmkeqJfuBsX7p2KtqScrLR2RkGLkpJpDcBwfXSuD6QPmGfA36pWM3di3HwduGcDSo+N1QdAGON++Wi1iRRe+BBqVOzTKaDwUkVanq/hocrm0p3+8c/0N18n/2ly7rv8Nte8GiBQKjJ9aaharuglVWGUcKpc45eAp+av9Y2pzpR8b620ekxNSiZeT35e+rstHpcLhznsl0qEeS6P3/6i+DivaPoCSNsNx+8HwIjcOVMB+aUk08GgvD9YGTDweBkfsr7001QWS2d9VY6/TkkDRWTy2IxsKSEz3t+SAlnsBt+Rsi/zAJcjKdJN4goHbjXxypSu/nksJML46tSzIWj0q1BL3N/QU/3Jluh9bRWrjkOwjfJ9UppTFaZtEL6YcGTs+vDCz79VA0qGl2tDSBk8uFzjcetxgBvNwVGb0iB3f7z0jkUR5NSqAOn2kxEslL3jWVydDGaJlhI5/xpx9zrhwndG9Yjfemx7DA6F/rdAl1HmXbkm1gdUTbkck7KRD3oz3QXGHNAJose4PtNfwJFT07Hjykkx3aEUZCyVNeJ76HlhhdpWpjtolNbMKyHv4DEwlIYov/X1cAAAAASUVORK5CYII=">
+                            Springboot
+                        </span>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia" src="icons/hibernate.svg">Hibernate
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Sistema de control de versiones</h3>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD0UlEQVR4nO2aSWsVQRCAv4iiAcUVFMxBhRgVjfuuBwVxQT158KjiLijqQU+ieBC3aHD3JP4JDZoIblEEF7y6m4P7gnE3iRT0g8djxnT1TPc8YT4oCC8ztfTMdFdXNeTk5OTk5PhmBLAeOAU0Ao+BD8AvI/L3I/O/k8A6oIb/nHFAHdACdDjKS+AwMJb/hApgCdCcIOg4uQksNjbKkinAHQ+Bl8ptYBJlRCVwDGgLEHxBxFY90CPr4GuABwEDL5V7QHVWwU8F3mUYfEFkBZkVOviFwLcyCL4gX4EFoYKfBrSWQdCl8i3Em1ADfCyDYOPkvc85odJiwmsC9gANwI8UA/sOXDS6L3Vy7V1fq8NxC0dXFl0/ENgFvE4Q+CtgK9C7SO8yi/uO+khy2iwMD4+4ty9w3iH4c0CfCH3VFvf+ASakFXyFIsMrflKlbAZOAyuA8cBg81mJVJnfVphr5No4+lr60pxW2rxE8dS64p+uCn9kuU5Ms8JgP/zTW+HPjTS2tB0KkX2/b4YofapNYqxOaWw5/pmr9OlgEmMtCkPtaX1znTDH2LL163mSrK9DIfsJx2Glb07Z4XrlKHcnHJLpvVD4t9bFyCmFgTWER/OATrgYaLJULjl/L8LTU7HfkP2DmqeWyi+QHQ2WPkoZXs17S+UHyI5Dlj6+dVH+01K57NayYrviM1Xzy1L5Nsp/AORhqvlUhuu/6ycghVNvk2Aj2XHF5yTYZKn8N9Cf8Awwtm18vOxi4KylcpF9hOeAwj9J6tSsURYtRxOOWmXRdZWLkdEKA4X9gJS5fFNl2uYa30a6GnuiNNRiGie+mAg8U/okk7kz9UpjhTW3LuXymOg6oshNikXuc2a8g8GCfDYVXnkjujjYlnumA2eMLlc/EpXEhFsRSj+a0rU0S75YOCH7itXYs1axF/mXXCcFlkYobjdLXxfTDHlpcapDUzCpjBl4rSxKYwAqTABRBnYXfSpxm6d2U13WMs50eFyDl3J+akyOaY1J0IPMNRtjHJF01fd+v1T+mBUjVepjjO0oumZvRMV2ZwKbmxwHQFYhL4XI+xHGHpb04CabNFWc2JBwnzDf8dyQtwJtdcy5IM0Mr2GSMvi3IQ5NzTK5f+mymHi9jWCi8ojMDAIxzxxMKnZAkpUtJS3ybglfR9sBaDUts6DMNq9c1Mrw1DQufiacjW0G4A0wk4wYZnFuyOcAyIQ3lIzpYXp1bQEHoM10fUO24zpFzuRcCzAAtz1vuRNRYfLv6x4G4Gqg9ntqjDGfxqgEOkaZ0nfIcpsXXOsBOTk5OTk5+OMvJumzTKKLQPIAAAAASUVORK5CYII=">
+                            Github
+                        </span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Bases de datos</h3>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC1ElEQVR4nLWVSWgTURjHR5M2Sxfbxpq0TTNNmjSLbaitoAg9uKEg6sGbxyIievCgCKJSBaGHkpikSdPJTGZJWsVAEdJOkpl582aiUDy44HKwtB6kbl2gB8WDl0oOBQ+lMwntHx58j+/3+L3l8JDedDF7YKL4x58uQm9aHkC2O30Tz397aXG/j5Fv9KTkZR8jP3GT4qCL4b3bIvCniml/SqZLtYcRTG5aHvYysuSh5TU3BecdJLxuDcwaKhb0TL5o9KeLX71M8Xxp7iakgy4aXkbW13fZk8IJZxKyThIuoaR4sWKJm5bPdafkuVLdicN+Dy196iTBpY0+muAP25NgHsVBypf5WF2RpDslr7pJuWdDUhr/91uwrBElxGw7DqYrkvhoaaqLku5tCQ1J2nYMTLclwGTZAhcFz3gpaa5091tx1sCsoQ0XPloS/JWyJR4avnWS8KoSZ8FlrwXjVy2EiJYl6GTgqS4aLqthzQnh4b44N1WegBQfuEhxQg1rDcwazOP8j+YE16ta4Kakd3YSnFTLN8eF26Zx7qlqQRcFfzkYwaaWbwrn6k1j3EpdnHepWuCi4F+UkvRIJqNxJMUvrYxgUpTEuOGmOIepE5DiIkpJHSglWexJcd2aEO4qrakJAXNjrLBSHy0QiidxkvBZBw5u2TDxSAcB1lACfDenuBolSS2W3VsfK9ypi+a/1UXzBBLN1G4K2nCu30GKyygBXqK4GGrHhcdWjA8jKrPnkdRQE81jxkjuc1Uw37cpZCW4bhsp3kQpqcGGFVusCbDaMgbK+oh04dygLpJb0YRyxxVh8zg424rxP80Yd0gRDmQMuljhaFWYvV8dYRe0oZkFVTtqxgoXLBj3XokzjuYXDaO5D4YIO6IJz5xGRpTfr6wYR/NBfYQFyJCkR3Yk2KsqfZilqkPsG1204NwZCYIg2jB7TRuaWdIE2WM7JkGC0wO7QzOv/wGGAihIdhgGDAAAAABJRU5ErkJggg==">
+                            MySQL
+                        </span>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAElEQVR4nO2Uv2tUQRDHV1Ko8W7m3vvOi54eChoLUbCwEhT9EyzEf8EfsRELwUqwsVH8ERSChY1YCFZiI2ilWIi2ImhI1MiZe7MviqWe7OXu3Ny9A00XmA9Ms7uzM9/ZmXXOMAzDMAzDMAzDMIy1yXyjsdGz3FLGomdpB1OW38p4r4SptnPrwrneXt8IPwvCycH7PMk9JczEa1/q9XHPckdZ8pX3YEFr2f7e/aNyLEhOeJK5oRwYl50Srinh4fdKXWKnPEn2ecYLzzhfFkBrclgZzRWBWA4oyTPPeKJJdqgvinHTs9wvmJNRSfoRAgrKJpXxoaBs1whHfP02LvWyvVaaNpQwWxbAM456kvmBtcdakyN5kuxVltdt58Y6YhnNwQL9qwAlTCnhjbJcGTLC6RB0YRHYWuqcJNtjAa003aaEt902yz3jWO9sXk0OhupHCd1WSs/+FbAlW6WAM6ETCsaFIQuvooSrSvLox6bNEz2n0PehN5XllWc5FwdoZlmlU2nCTNtNru8HYnkaqq8kF6NZ0pC4Z9zwjAdL1Sr+V0DBEztDEVuVdE+p46zbscETrocqRYF/Kcu7nHAqHuJI4JhnmfYsL8PrdRN/PpwULinhbneIp+OPYvkjkLkwa52zJJ8G9j4vVWX38j3ZcSV8LB1iwzAMwzAMwzAMwzDcmuQPOgsVOlpddvAAAAAASUVORK5CYII=">
+                            Oracle
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Gestión de proyectos</h3>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEcUlEQVR4nNWZXU8aaRTHp20EBIUFrUttEV1m8GPsl9ju1i62vtJqfU+3VHzhtYm3/Qyb9GIverm3a3aTXjbNmtoW6wu6VVtNQR2EKng255kXICkVhplxOMm5Hf6/+Z9z5jwPFKVg2Cf3T12hXJCqxWge3TmhwznArDmIht7VjCt4SsTXHITB8yZ9dexjkfgCiAVK6+Iv3XwJHYEvXwXQtBPGu7HUpZ9egt6zXFK8Zp2w3osn67qWAAEa+1fPBdAUhPVePGnqiUHdrX8JgMW7URaAJiC+n9jbMPXGoBDAPLheNgB9kRAo3jb8ARr63hMAHV9C9XfeVQRAXwSE08/+g+IxG/vXOIBfXxOAKz+/AlfoVApEUB3xM6lFx+NDaB7ZJQBm7zoBqO9+SwAwrz1MVAxAq+EEHYaI4/ERIEDLxB4BsN7fIgCY+PYrmUS0mk4wEQi6owDtM8cEoPW3BAEo6gO+jPBj5vCz1UAsKCIe84fgCQHgymibAFgGN3gX3sHlm5wLxp6YZABaTicKxXN5Bo5prozsk3wZoQu9KwTC4FkWe8E2sl0txILM4rnsmMsQgBu+A2h6wLvgjYu9UNfFfRN0t5fOXOHcswtxgikhHpMJ58AxzZWRfWpf7AXzADdSjXdjoPe8PjNPbtqoP+CKK5T7XVUnmG+IF3thPpPvhdEdDmLoA5j6VsA8uJa1+j5bxAeqCcGUIZ5kBMDpZwnA9Uf5Umoa3T22+iAvXk0IplzxfNKhrOhC68MEtIx/Yq95wVjyB5SEYCoUL6QrwI3VNj+76QyA4VyLlYBwR2FCinhxKs1nXlAB0J0rvhCiyulEh7Pj3MMCcJmJwGEVAM9QUNni5YIIZZOonQC4o3AgFYCJQpx+CnrVAcLZBAdAUVRnGMarKaGKIQKga59Pv5CnhPhwR8FXFUQEtn4sp4kDoHP62TVs/I65L1LFB776bPcTeF4NhPs8JyahvmXsI4sjVxi/ruCJPOKF6HwCfyrixDA0NI/tpMjH7sE2XPclufE7zconXjGIYWiwDKyd4sZqG/qPfLFx/XDwLnTMpeUTLzuE97NF71nO4YKHix6e1oTlzz61z0FMH4IrlJVPvBBMBBar7IkNXKlxtcYVW1i3cfUWSumG74BAtM+mlTnYVOtE08iOeMAxdC8TAFJKogt7fC8ckd1KljcvtxOmnhUCgMdNE19KeINnw14Y2c73QtGlsEzi5XDCOXssuoAHf+JC33vRBWGsOmdSyoiXwwk8rZGLr19eib1gHdoiAC0Tn3gXjoAO5iKUkiHVidZHSdGF+jtvi8roKj9S22ZTf1FqhBQnmEhOvPgSyqhxID9S22bYvyk1Q4oT+OYJQNcSB9DHAdin9tZVFS8VwjK4TgDwKp70QW/s4sRLgfjOGy8CsN7fTFBaiHIhcI0QSkgz4iuB0POXv8aeWIrSYjDfmE74xzfeWhu636QpLUdnCSfwz2/Niy/lBN6lmvpXM1QtBVMA0Ty2m6VqMZgILNqn9s+U/JH/Abpk8F+2oQqdAAAAAElFTkSuQmCC">
+                            Jira
+                        </span>
+                        <span class="tecnologia">
+                            <img class="icon-tecnologia"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNElEQVR4nO2ZwU7DMAyG/Rx08Ql4mvFWaAlvwY5o4nlWrlt8CUxiO27SgnzhMDFYmtAE8f+ST5Vbf46buDURBEFQs+rcemKsLIz1O3YSxzRj/c5Y/9w9rG8GB89WNmMHzqdmZTO5X3XJAJr56sG7T4inAQDjlw2fKycn78kApze5m4f48nqIx3heeq0Phzh9DLG0P+UC6MMvlQZR2p9yAb7L3FeZLO1PuQCpKu1PAEgUVsChhAQvMWMXEmyjsdRB9OdP4j5c3gstw749AO0wFeKnbnQZ9r/TjeYC5BoBIFFYAYcSErzEjF1I2vmor34O9JmtQHWAaWYrUB2AKxv9OwDj/LZ20Jzzc1eHC80AWFkkA1zN/C07eWtiwDFbXdMQ6WREhws1ysk4v9XMDw4egiCIxtAHB3uAhj5FBooAAAAASUVORK5CYII=">
+                            Trello
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container" id="aboutme">
+            <div class="row">
+                <div>
+                    <div>
+                        <h2>Sobre mí</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Educación</h3>
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4 style="margin-bottom: -5px; display: flex; flex-direction: row;"><img
+                                        style="margin-top: -4px; margin-right: 5px;" src="./icons/utn.svg" alt="">
+                                    Tecnicatura Superior en Programación</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Universidad Tecnológica Nacional de Mendoza</p>
+                                    <p>Materias aprobadas: 20/21</p>
+                                    <p>Finalización: Septiembre de 2024</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Idiomas</h3>
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Inglés</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Listening: Intermedio</p>
+                                    <p>Conversacional: Básico</p>
+                                    <p>Writting: Básico</p>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Español</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Nativo</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Experiencia laboral</h3>
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>
+                                    Asesor comercial</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p style="display: flex; flex-direction: row; margin-bottom: -5px; "><img
+                                            style="margin-top: -4px; margin-right: 5px;" class="icon-img"
+                                            src="./icons/logo-carestino.png" alt="">
+                                        Carestino</p>
+                                    <p>2021/2022</p>
+                                    <p>Me desarrollé como vendedor, en un rubro de venta de productos para bebés.</p>
+                                    <p> Aprendí a vender sin experiencia previa y por sobre todo a <b>encontrar el
+                                            producto
+                                            que mejor
+                                            se adaptaba a la situación de cada cliente.</b>
+                                    </p>
+                                    <p><b>Trabajar en equipo manejando un
+                                            equipo de 3 personas.</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Habilidades blandas</h3>
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Resolución de problemas</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Trabajé unos meses en atención al público, posición donde me enfrenté todos los
+                                        días a un inconveniente nuevo. Eso me llevó a desenvolverme e
+                                        improvisar
+                                        sobre la marcha para <b>encontrar
+                                            una solución rápidamente y solucionar problemas diarios</b></p>
+                                </div>
+                            </div>
+                        </span>
+
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Empatía</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Al trabajar en un ámbito sensible, ya que la mayoría de clientes eran padres
+                                        primerizos, tenía que en pocos minutos entender la situación de los clientes y
+                                        las necesidades para ofrecer el mejor producto para su caso específico, además
+                                        de aclarar cada una de las dudas. Para
+                                        ello tenía que <b>escuchar y ponerme en lugar de cada una de las personas</b>
+                                        que
+                                        entraban al local, lo que me ayudó a <b>comunicarme de una forma sencilla y
+                                            simple
+                                            para aconsejar al cliente</b></p>
+                                </div>
+                            </div>
+                        </span>
+
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Buena adaptación a los cambios</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Dejé ese trabajo para poder ser programador, con 0 conocimientos sobre software
+                                        intenté entrar a un instituto donde fallé en el exámen y tuve qué, rápidamente,
+                                        en un mes aprender todo lo que no había aprendido para ingresar a la
+                                        Universidad Tecnológica Nacional donde el ingreso era sustancialmente más
+                                        difícil. Finalmente ingresé en la posición 34 de 112 compitiendo con personas
+                                        que incluso ya trabajaban de esto.</p>
+                                </div>
+                            </div>
+                        </span>
+
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Autodidacta</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Debido al inconveniente de quedarme sin ingreso y tener que aprender todo solo,
+                                        de a poco encontré que soy <b>buen autodidacta lo que me ayudó a adelantarme al
+                                            contenido de la facultad.</b> Me gusta aprender cosas nuevas, y mejorar las
+                                        ya
+                                        aprendidas constantemente.</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container-proyectos">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Proyectos</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <!--
+                <div>
+                    <div class="single-portfolio">
+                        <h3 style="text-align: center;">Sistema contable</h3>
+                        <div class="content">
+                            <div>
+                                <p>Sistema para cargar asientos, creación de libro
+                                    de cuentas y manejo del libro mayor al momento del cierre contable</p>
+                                <p><strong>Creado con HTML, Js y una API Rest
+                                        producida con Java, Spring
+                                        e Hibernate</strong></p>
+                            </div>
+                            <a href="https://github.com/Granzo05/Sistema_Contable" target="_blank"
+                                class="btn-view-project">Mirar
+                                proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- Proyecto 2 -->
+
+                <div>
+                    <div class="single-portfolio">
+                        <h3 style="text-align: center;">Ecommerce</h3>
+                        <div class="content">
+                            <div>
+                                <p>Cuenta con un sistema de stock, manejo de empleados,
+                                    sucursales, creacion de promociones, pagos mediante Mercadopago, productos para venta y
+                                    estadísticas financieras</p>
+                                <p><b>Creado con HTML, CSS, Typescript, React y una API Rest en Java usando
+                                        Springboot e Hibernate</b></p>                            
+                                <p>
+                                    <b>
+                                        La aplicación depende del backend para mostrar ciertos elemmentos pero no tengo un
+                                        servidor dedicado para el mismo. Por ello está disponible el código en Github
+                                        para
+                                        analizar
+                                    </b>
+                                </p>
+                            </div>
+                            <a href="https://autosp.vercel.app/" target="_blank" class="black-button">Mirar
+                                proyecto</a>
+                            <br>
+                            <a href="https://github.com/Granzo05/buen-sabor-app-typescript-react" target="_blank"
+                                class="black-button">Mirar
+                                código</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+
+                <div>
+                    <div class="single-portfolio">
+                        <h3 style="text-align: center;">Calculador de distancias</h3>
+                        <div class="content">
+                            <div>
+                                <p>Sirve para calcular las distancias en Kilómetros entre varios lugares del mundo
+                                    sólo utilizando coordenadas, es un software sencillo que ahorra tiempo al
+                                    necesitar determinar distancias para obtener lás más cercanas a un destino.
+                                    Compara cada dato de una lista de partida con una de llegada y se almacena
+                                    generando un resumen en Excel y guardando los datos en una base de datos Oracle
+                                    para poder utilizarlos nuevamente sin necesidad de buscar las coordenadas</p>
+                                <p><b>Creado con HTML, CSS y js</b></p>
+                            </div>
+
+                            <a href="https://github.com/Granzo05/Calculador-de-rutas" target="_blank"
+                                class="black-button">Mirar
+                                proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <div>
+                        <h2>Datos más personales sobre mí</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="service-single wow fadeInUp" data-wow-delay="0.7s">
+                        <h3>Hobbies</h3>
+
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Jugar videojuegos</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Me encantan los simuladores de autos pero soy de jugar a cualquier cosa</p>
+                                </div>
+                            </div>
+                        </span>
+
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Leer libros</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Depende la época leo policiales para entretenerme o libros de autoayuda para
+                                        buscar motivación.</p>
+                                </div>
+                            </div>
+                        </span>
+
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Aprender cosas</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Aprender me ayuda a motivarme y a trabajar la paciencia, la primer etapa de
+                                        aprender siempre es tardía y tediosa pero cuando las cosas empiezan a encajar
+                                        me motiva mucho.</p>
+                                </div>
+                            </div>
+                        </span>
+
+                        <span class="tecnologia">
+                            <div class="experience-single">
+                                <h4>Cocinar</h4>
+                                <div style="padding-left: 15px; border-left: 1px solid black; margin-left: 5px;">
+                                    <p>Me ayuda a despejarme, estar concentrado durante un rato en algo que disfruto
+                                        hacer y sentir como cada vez se perfecciona la receta, sobre todo por la
+                                        libertad a la hora de cocinar, improvisar, probar cosas nuevas y descubrir
+                                        nuevos sabores.</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="resume">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <div class="section-title">
+                            <br>
+                            <h4>Si te quedó alguna duda sobre mí o te llamó la atención mi perfil, estoy aquí para
+                                aclarar
+                                todas las dudas.</h4>
+                            <p style="text-align: center;"><b>¡Te deseo un muy buen día!</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 50px;">
+            <div class="container">
+                <div>
+                    <div>
+                        <div class="about-content wow" data-wow-delay="0.3s">
+                            <div class="container-datos-pers">
+                                <span class="datos">
+                                    <img class="icon-img"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADeUlEQVR4nO2YS2gTQRiAf/GBtrSC9bWbWkUP1SpFbDPTShXBq+hJBfGoJw8e9GR9o3ixJ0Hc3bSdTVofEWoVWu1BUmNm0mKamWhVUCt40IOKL1BRwZWNLWxeTXswmcV8MLewzJf//2fm/wFKlCjxnxAMzlzqI5sVg7QphvlM1c0vqmEeAplZHgrNVXRzh6KbHapB3qmGaaUsnfxeqnV4QUZwNLHdS/nLFV3XUzedIWHeA9lATBzHTFj2Wtcfmlzgr8Q2kAlMxecJAUS5tYxczicxatcIyAKi4smEgL3W3BrIGwXFIPtAFhDlB5wC3vsjlqc9MLmAbr5e4veXgww0xGJlmPL3Tonanv78tWCYx0AWEOOnU6IQHrGq80TBvhsWBAKVIAPNVCxGjH9PqYWbU6gFLbABZAFTcckpgCJxq8a8MokAGYEToVkgC02MezAVX50S9QPhHOlDHiha90KQDUz5WaeAvVZd603/58MrNW0+yAgaGqrETLxxCjSGY1Z1Z9dE4Q4omlYGMoOjYnd6FOxUUnTyvsrnqwA3gCi/nS5R29M/Bm6hiXEPYvxDyt1A47+8ww8bwS3gCN+bHgXE+Avv8HAVuAVMRXeGBBWDdaOjc8AN1AtRjpkYTZfAVBCwrBngBprpw9WYik9Z0uk8uAUc5Vsw5T8yJcRxcAs4wvdnpNJfiRNT/UaDps1W9c71RbvJcZS3ZpPAVFzIVxOqaVYpOolPPMVVnRwtSlOEGD+XQ4LkOp3svkHVyYMsPcVbRSMHC/6qxZSfzJpOVERawvFFzt9WtwXnqQYZzNNbPPX4/DsLKoFY4kgOiecNLJFsdOy3k/0AnEJ7ao332qGCDs+ShU3Fz3QJ+9lR29P3SjHIh6luXnVMAFUfOVwwCS9NbMVMfMwWjfo7g9ayju7pCRj22Mb8BIWkMZKoxYw/yiZh9xOrrt6YrsAzKMazAzERyHpCjfcUNZP22CmDszYoFl4W35MrpVCEJ6cd+UY2ih7YBMUEDSWqEeX9uaLReD+WHJ552v3Z5k1vpZm9NjG+CzHxOqdIOGat7r1jedq7nEdpB8jExsjTCkTFmfSRTcqxGxmx1vbdtZb7r9kCO0DaNpXyi4iKb7lEEBVjdcGg3M1SSzi+CFN+ClPxLkMimtgObqEhFitLjvapeJw8taK8tdh7KlGiBPxb/gAwKJWlsMaWKAAAAABJRU5ErkJggg==">
+                                    <p><b>Celular:</b>
+                                        2613869291</p>
+                                </span>
+                                <span class="datos">
+                                    <img class="icon-img"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjElEQVR4nO1Wz0sCQRTe/24LEQRvQV0K6pSHOtS941qaHSIoKhIED0F0iDoVBR1ad/uhbBqloqWS2bpt/gj2i5kUgrJaXW2R+eDBMDPM++a9770ZjmNgYOgDGIYBOxr3mSAviLYygxEUWARFe2nwPF2GJ6j8e3F4ggrl8oXg3M4t7ktViHcqxtdjPSc2uhbFoVJEQa3Bv5/6voodCxG6WHyp0c3DK5ddJza0fIFduYCSXsfqUQZOn/R7m3Etytg8yeJZryN0+gB3QLacmMsvUULEx/ZZDu4l2XwfbHW7TszRzJL2kaWRFlky1ajHGvrIq1V6+KA3YprYgFekOs+WKlTnExsx61+SZoUlH1+pM/6P5GbCcSRyOmJZDdOh6+4/dcThTV5HNKNh6geHk1sKpJSKVONCA718i0ma5/eSNO3H8SfMhhO0mIiRMZkja2RPO5Kw7LPg9EkIHKRxldFQrrxRI2My10lRsd8M32bkWAT5DiPHIsizCArWaIhnGhRYBGGqzdjROAYGhj7AO5wjySyJHm3hAAAAAElFTkSuQmCC">
+                                    <p><b>Email:</b>
+                                        facu.granzotto5@gmail.com</p>
+                                </span>
+
+                                <div class="web-links">
+                                    <div class="btn btn-linkedin btn-lg" onclick="openLinkedin()">
+                                        <img class="icon-linkedin"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2aPWsUURSGrxoFxSSmS2JhJVpoFRG0t4qYKrG1SOEPSCJYiKDYKDb6CywFtRMEV0QRgim0iqBgYVBQJCRRkoiaR87yBoZhZ3J3Zid7B+9TJee83HvevR8zmxPnIpFIIYCzQAP4Sff5oVpG2zVxnXC51s5KGOvAFDDkugwwBEyrJrxWBngm8ZQLDGBGtTV8xLYfjUEXGMCgalvxETdxgYJvff+FEeAU8Bj4CnwBHgHHqii4MiO6zf60uA7XgBFXIyNvlbJnzAFgv93pij2tqvAqjCwrtS8R6/O+RQIy8lypG0C/TFxVbLaqwqswMgKstjgj9rQ94Wp2ax0G7gGfgM+1vLVCgQ5srVdk89JHA+wGzgMPgAVtyyXdiLeAo9thJBcfDfBui/xv4DbQU7mRvLjnhzAPTAKHgD1AL3AauAv8kuYhsDNEI/b03wCuZBUo3Ungm4aZCdHIODCR+H1XzvxnNIydnb6gjChnrzV3gO+S2UvnTdtaLbRPpLkYlBF7rQHeJM7J38TPc8DelP6CcvdDM3JZqffAcbuVdB4+tjoPwBHFP4RmxD5141wqPqb461S8X/Gl0IwsKjWQig8ovpiK71B8IzQjmZOXmS+XaMTFFWlSdme4sgMk40UmLzNfLtGIiyvSpOzOcGUHSMaLTF5mvly2GiALX02RcTttxL5zZ/HCV1Nk3I4aCQXaMLIibddbbmmAg6pt2Uds3VNj2gUGcKmd1tuoxOvq2Q1vS5X5NQ3LxOZfWfza1Il2QX3b06mVaSSao/X7h4FIJOI2+Qcr3dTGXC5RnAAAAABJRU5ErkJggg==">
+                                        <p>LinkedIn</p>
+                                    </div>
+
+                                    <div class="btn btn-github btn-lg" onclick="openGithub()">
+                                        <img class="icon-github"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADv0lEQVR4nO2ZW4iNURTHP4YMcs+4X3In8eASxgMpcosXhPJCcifhlTzILZdGKY/y4M0tdx5JeDAyDDMkxqUwjfu4HD8t1qnjtM/37X3Ot8+ZNP/adTrft9Ze/73XXpf9BUEj/lMAHYC5wB7gLFAJ1ALfdMjvB/pM3pkDtA8aAoAWwGLgIvATd4jMeWCR6AoKQKAlsBF4QXyoATYAxfkiMR2oxh+qgGm+3egg+cNR2fm4SXQBbpN/3ARK4iLRV7e7UHgkNuRKorOG0UKjGuiaLYniArlTmJu5h2jgMA0PZdmE2DBsUbcbDWwFnuZgnGT7zcBIrQ72Rbw/1SXZReWJngY3FEJfgSvAemAiMBBorWOQ/rcKOAV8BNYCRWm6Rloc/mgX04wdBWP2BZpbrVbIu0A3i/nX2yQ9m7Ij3kT1rw1dLeZ/HrorWgDaYIhHIqWWNiwMUyJVrA3meySy2tKGc5kUdHAoxbd7JHLE0oYfQFuTAmmKbPBeDqRHIkOB75a2zDYp2GspvM8XiSSA45a27DYJSwtqg7GBZwDzLG05bRKWRGPjl83yQGSwJZFKk/BbC8G3vkkIgF6WRN4E6dCbjijIO00CzwCGp3lBrY5fafbUm4STkWKS1jv9gI5Ad/2dHN6JpEJcWVODjCZaC/ZILqxJoE4f3gDuAI/V3V7p7+RYEHgGUBbiFZ9TjkGtSfihPryqpfQ6idNasY7QlvfPquSBSFOdqzcwTCIlMFMr5516FyZ4YBK+oA93aBm+HzgBXAPKdTfe6TlZ4nk36vVMPAEqgFvAGeCQ9kJ7M5YpUnZgj0+yUx5ILDcc6DBsMymZghu+AEvjcDVtH3Y5khBMNilrZRmC03Fdz1JRFgRa62KI27qiPmNflHJO0iF9yjJJQCGKXwPHgJWyUkB/oF2K7k7Sx8h1KLBJygttd7PF2bAVkpXNFPJKtQcXg23cToztkqK7RP+TZ3FgRlTYk0hhQrk+HwN8iCBRGjJHaQxkqsSWKL+V0JsJM1NKiAvqGsmPOM+Ay8Cs0An+yq/Ikchqq9sN4K6zXzpAdzbTHFG4Y12BAxOAhEFJIq78oUHBFQlgnOtEkkVNqNOLtZ6Rfhquf0AWRA5mM1FzrbtcUOSo3wWXXC4A0ydr6+LLWei3RUXOX4CBPsD9AhK5Jx1jTiRSJmwjlWYBiFyO/Vu8+nRZhmgWN5EEcMDrRQcwSvsDX0TKgfF+rDf30WvTvqPUZKHnZYq86FqTj+umTBlaWtCTyfLFUX62ys7IJSc1ohGBP/wGjidhuRxqAwcAAAAASUVORK5CYII=">
+                                        <p>Github</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const words = ["Backend developer", "Facundo Granzotto"];
+            let currentIndex = 0;
+            const changingWord = document.getElementById('changing-word');
+            let isDeleting = false;
+            let charIndex = 0;
+
+            function type() {
+                const currentWord = words[currentIndex];
+                if (isDeleting) {
+                    changingWord.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    changingWord.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    // Una vez que la palabra está completa espero un tiempo para borrarla y escribir la otra
+                    setTimeout(() => isDeleting = true, 2000);
+                } else if (isDeleting && charIndex === 0) {
+                    // Una vez que la palabra está borrada escribo la otra
+                    isDeleting = false;
+                    currentIndex = (currentIndex + 1) % words.length;
+                }
+
+                // Velocidad de borrado
+                const speed = isDeleting ? 50 : 100;
+                setTimeout(type, speed);
+            }
+
+            type();
+        });
+
+
+        function openLinkedin() {
+            window.open("https://www.linkedin.com/in/facundo-granzotto/", '_blank');
+        }
+
+        function openGithub() {
+            window.open("https://github.com/Granzo05", '_blank');
+        }
+    </script>
+
+</body>
+
+</html>
